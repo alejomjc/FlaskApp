@@ -24,4 +24,4 @@ Esta aplicación es un ejemplo básico de una aplicación web utilizando Flask, 
 2. Crear un entorno vitual con el siguiente comando: py -3 -m venv venv
 3. Activa tu entorno virtual con el siguiente comando: venv\Scripts\activate
 4. Instala las dependencias del proyecto ejecutando el siguiente comando: pip install -r requirements.txt
-
+5. Ejecutar el proyecto con el comando: flask --app main run

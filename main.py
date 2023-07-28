@@ -5,7 +5,10 @@ app.secret_key = 'J1$7qMf0@9z2'
 
 @app.route('/')
 def main():
-    session['mascotas'] = session['mascotas'] if len(session['mascotas']) > 1 else []
+    try:
+        session['mascotas'] = session['mascotas'] if session['mascotas'] else []
+    except:
+        session['mascotas'] = []
     print('session', session['mascotas'])
     return render_template('index.html', mascotas=session['mascotas'])
 
